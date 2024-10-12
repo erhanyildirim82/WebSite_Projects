@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Template</title> 
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap-4.4.1.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css"> <!-- Özel CSS dosyanız -->
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png"> 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <!-- Header Section -->
+<header class="text-white text-center py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a href="#"><img src="images/logo.png" alt="Logo" class="logo"></a> 
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> <!-- Üç çizgili menü butonu (mobilde görünecek) -->
+        </button>
+        <nav class="collapse navbar-collapse d-lg-flex" id="navbarNav">
+            <ul class="nav ml-auto">
+                <li class="nav-item"><a href="#hero" class="nav-link"><b>HOME</b></a></li>
+                <li class="nav-item"><a href="#about" class="nav-link"><b>ABOUT</b></a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link"><b>CONTACT</b></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero text-center text-light d-flex align-items-center justify-content-center" id="hero" style="background: url('images/main.jpg') no-repeat center center; background-size: cover; height: 65vh;">
+        <div>
+            <h2 class="hero_header"><i>Project Name </i><span class="light">has arrived</span></h2> 
+            <p class="tagline">Your slogan or project description here.</p> 
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about my-5" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="info-box">
+                    <h3 class="text_title">Who We Are?</h3>
+                    <p class="text_about">A brief description about the project or company goes here.</p> 
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-box">
+                    <h3 class="text_title">What We Do?</h3>
+                    <p class="text_about">A brief description of the project's main activities or services.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-box">
+                    <h3 class="text_title">Our Mission and Vision</h3>
+                    <p class="text_about"><b>Mission:</b> To create... (mission statement).</p>
+                    <p class="text_about"><b>Vision:</b> To become... (vision statement).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- Gallery Section -->
+<section class="gallery my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <img src="images/gallery1.jpg" alt="Gallery Item 1" class="img-fluid custom-img"> 
+                <h4 class="mt-3">Gallery Item 1</h4>
+                <p class="gallery-desc">Brief description about this gallery item.</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="images/gallery2.jpg" alt="Gallery Item 2" class="img-fluid custom-img">
+                <h4 class="mt-3">Gallery Item 2</h4>
+                <p class="gallery-desc">Brief description about this gallery item.</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="images/gallery3.jpg" alt="Gallery Item 3" class="img-fluid custom-img">
+                <h4 class="mt-3">Gallery Item 3</h4>
+                <p class="gallery-desc">Brief description about this gallery item.</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="images/gallery4.jpg" alt="Gallery Item 4" class="img-fluid custom-img">
+                <h4 class="mt-3">Gallery Item 4</h4>
+                <p class="gallery-desc">Brief description about this gallery item.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Us Section -->
+<section class="footer_banner py-5" id="contact">
+    <div class="container">
+        <h3 class="text-center footer_banner">Contact Us</h3>
+        <form action="send_email.php" method="post" class="contact_form"> <!-- Email form -->
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <input type="text" name="name" placeholder="Your Name" class="form-control" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input type="email" name="email" placeholder="Your Email" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Your Message" class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
+    </div>
+</section>
+
+    <!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container d-flex justify-content-center align-items-center">
+        <p class="mb-0">&copy; 2024 Project Name. All rights reserved.</p> 
+        <div class="social-links ml-3"> 
+            <a href="#" target="_blank" class="text-white"> <!-- Sosyal medya bağlantı linki -->
+                <img src="images/twitter.png" alt="Twitter" class="rounded-icon">
+            </a>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS ve jQuery -->
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

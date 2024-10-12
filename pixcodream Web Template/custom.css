@@ -1,0 +1,139 @@
+/* Genel Stil Ayarları */
+body {
+    font-family: 'Sarabun', sans-serif;
+    color: #272559;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Ayarları */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Başlık sabit kalır */
+    background-color: #272559;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    height: 65px;
+    width: auto;
+}
+
+/* Navigasyon Menüsü */
+.nav-link {
+    color: #1DCBF2;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    color: #1DCBF2;
+}
+
+/* Hero Bölümü */
+.hero {
+    background: url('images/main.jpg') no-repeat center center;
+    background-size: cover;
+    height: 65vh;
+    padding: 100px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.hero_header {
+    font-size: 3em;
+    font-weight: bold;
+    color: #D94E81;
+    text-shadow: 2px 2px 4px rgba(39, 37, 89, 0.9);
+}
+
+.light {
+    color: #1DCBF2;
+    text-shadow: 2px 2px 4px rgba(39, 222, 242, 0.7);
+}
+
+/* About Section */
+.about .text_title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #D94E81;
+}
+.text_about {
+    font-size: 15px;
+    color: #27DEF2;
+    font-weight: lighter;
+}
+.info-box {
+    background-color: #272559;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    height: 100%;
+    text-align: justify;
+}
+
+/* Galeri Ayarları */
+.gallery img {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.custom-img {
+    width: 80%;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 20px;
+    border: 1px solid #1DCBF2;
+}
+
+/* Contact Us Section */
+.footer_banner {
+    background-color: #272559;
+    padding: 30px 0;
+}
+
+.footer_banner h3 {
+    font-size: 2em;
+    color: #D94E81;
+    margin-bottom: 30px;
+}
+
+.contact_form .form-control {
+    border: 2px solid #1DCBF2;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #272559;
+}
+
+.contact_form button {
+    background-color: #1DCBF2;
+    border-color: #1DCBF2;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact_form button:hover {
+    background-color: #27DEF2;
+    border-color: #27DEF2;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 50px 0;
+    }
+    
+    .hero_header {
+        font-size: 2em;
+    }
+}
